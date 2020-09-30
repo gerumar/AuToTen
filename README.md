@@ -26,7 +26,6 @@ Alternatively, the user can also call AuToTen's util functions independently. We
 The workflow of AuToTen is shown in the figure below. As input, AuToTen is fed with a piece of music, in MusicXML format, and it outputs its values of *global tension* and *attraction*. The unshaded boxes in the workflow represent the algorithms embedded in AuToTen, whereas the shaded boxes represent the corresponding inputs and outputs to these algorithms. There is also a box which has been highlighted with a dotted line. It represents the GTTM-based analysis that has to be performed using IGA.
 
 ![AuToTen's workflow](/images/workflow.png)
-Format: ![Alt Text](url)
 
 ### AuToTen's implementation
 
@@ -56,7 +55,6 @@ Step 3 is performed by the *matrix calculator*. As input, it is fed with the *GT
 In AuToTen, the *matrix calculator* corresponds to `functions.prolongation.generator`. The input file, *GTTM tree*, provided by IGA, is stored as a *MusicXML ElementTree*. Be a *GTTM tree* with *n* events, `functions.prolongation.generator` will calculate its representation as a *n*x*n* *GTTM matrix*. A given event in the piece, *x*, will be represented in the *GTTM matrix* by the *xth* row, which will only contain a non-empty value, that coinciding with column *y*, where *y* corresponds to the branch to which *x* is attached in the *GTTM tree*. An example is shown in the figure below. Note that the highest dominating event is number 5, as there are no branches above it. This will be denoted by a 0 at the (5,5) element in the *GTTM matrix*. The events that connect to 5 in the tree, these are events 1 and 4, are represented by a value of 1 in the *GTTM matrix* (i.e. there is only one branch above them) (see elements (1,5) and (4,5)). And so on. Notice that the rest of the elements in the *GTTM matrix* are kept empty. 
 
 ![GTTM matrix calculation example](/images/tree-example.png)
-Format: ![Alt Text](url)
 
 #### Step 4
 
