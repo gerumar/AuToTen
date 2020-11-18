@@ -10,6 +10,6 @@ This is a repository for AuToTen (as in **Au**tomatic **To**nal **Ten**sion), a 
 **AuToTen** has been relocated. Please see:
 
 Ruiz Marcos, German; Laney, Robin; Willis, Alistair (2020): AuToTen: an automatic calculator of tension in tonal music. The Open University. Software.  
-![https://doi.org/10.21954/ou.rd.13026578.v1](https://doi.org/10.21954/ou.rd.13026578.v1)
+https://doi.org/10.21954/ou.rd.13026578.v1
 
 
